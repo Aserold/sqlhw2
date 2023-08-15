@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS Genre (
 CREATE TABLE IF NOT EXISTS Tracks (
     track_id SERIAL PRIMARY KEY,
     track_name VARCHAR(60) NOT NULL,
-    track_duration_sec NUMERIC(10, 3),
+    track_duration_sec INTEGER,
     album_id INTEGER REFERENCES Albums(album_id)
 );
 
